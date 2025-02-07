@@ -1,0 +1,18 @@
+
+serverAddr = "47.122.3.249"
+serverPort = 7000
+auth.token = "40725744"
+
+[[proxies]]
+name = "kaggle_ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 8900
+
+[[proxies]]
+name = "kaggle_webapi"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 11434
+remotePort = 8910
